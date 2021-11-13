@@ -385,3 +385,33 @@ footer{
   color: #eeeeeea6;
     font-weight: 400;
 }
+.frame-order{
+  width: 100%;
+  text-align: center;
+  padding: 0 300px;
+  padding-top: 30px;
+}
+.book-title{
+  background: black;
+    color: azure;
+}
+.book-sub{
+  background: beige;
+}
+.screen{
+  padding: 0 100px;
+    text-align: center;
+    font-size: 30px;
+    color: #333;
+    font-weight: 700;
+    padding-bottom: 50px;
+}
+.frame-ghe{
+  padding: 20px 200px;
+}
+.frame-sub{
+  padding: 20px 20px 30px 70px;
+    border: 1px solid #eee;
+    background: beige;
+    border-radius: 10px;
+}
