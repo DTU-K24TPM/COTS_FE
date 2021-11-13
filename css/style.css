@@ -410,8 +410,26 @@ footer{
   padding: 20px 200px;
 }
 .frame-sub{
-  padding: 20px 20px 30px 70px;
+  padding: 30px 10px 30px 50px;
     border: 1px solid #eee;
     background: beige;
     border-radius: 10px;
+}
+.btn-seat{
+  background: #333 !important;
+    box-shadow: none !important;
+    border: none !important;
+    padding: 5px 10px !important;
+    width: 50px;
+}
+.btn-check:active+.btn-primary, .btn-check:checked+.btn-primary, .btn-primary.active, .btn-primary:active, 
+.show>.btn-primary.dropdown-toggle{
+  background: rgb(254 199 88) !important;
+}
+.td-order{
+  padding-bottom: 5px;
+}
+.couple:active+.btn-pcouple, .couple:checked+.btn-couple, .btn-couple.active, .btn-couple:active, 
+.show>.btn-couple.dropdown-toggle{
+  background: indianred !important;
 }
