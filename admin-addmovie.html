@@ -69,24 +69,36 @@
                             <th scope="col"></th>
                             <th scope="col">Tên phim</th>
                             <th scope="col">Đạo diễn</th>
-                            <th scope="col">Diễn viên</th>
                             <th scope="col">Khởi chiếu</th>
                             <th scope="col">Thể loại</th>
                             <th scope="col">Chi tiết</th>
                             <th scope="col">
-                                <div class="btn-admin"><button type="button" class="btn btn-danger btn-buy"
-                                        style="width:100%; margin-top: 0px" data-toggle="modal" data-target="#myModalad">+</button></div>
+                                <div class="btn-admin">
+                                    <button type="button" class="btn btn-danger btn-buy" data-toggle="modal" data-target=".bd-example-modal-lg" 
+                                    style="width:100%; margin-top: 0px">+</button>
+                                    
                                         <form action="">
-                                            <div class="modal" id="myModalad">
-                                                <div class="modal-dialog">
-                                                    <div class="modal-content">
+                                            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-lg">
+                                                  <div class="modal-content">
                                                         <div class="modal-header">
                                                             <h4 class="modal-title">Thêm phim</h4>
                                                             <button type="button" class="close"
                                                                 data-dismiss="modal">&times;</button>
                                                         </div>
         
-                                                        <div class="modal-body">
+                                                        <div class="modal-body-plus">
+                                                            <div class="modal-left">
+                                                                <div class="col-5 img-add">
+                                                                    <img id="img-edit-item" class="imgAddPreview"
+                                                                        src="img/trasua.jpg" style="width: 100%;">
+                                                                    <input type="file" class="form-control imgChangeAdd" name="image"
+                                                                        id="img1" accept="image/png, image/jpeg, image/jpg"
+                                                                        style="display: none;">
+                                                                    <label class="btn-addimg" id="btn-edit-img-item" for="img1">Chọn ảnh</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="modal-right">
                                                             <div class="ad-phim">
                                                                 <label style="margin-right: 30px;" for="">Tên phim</label>
                                                                 <input style="width: 75%;" type="text">
@@ -96,12 +108,8 @@
                                                                 <input style=" width: 75%;" type="text">
                                                             </div>
                                                             <div class="ad-phim">
-                                                                <label style="margin-right: 30px;" for="">Diễn viên</label>
-                                                                <input style=" width: 75%;" type="text">
-                                                            </div>
-                                                            <div class="ad-phim">
                                                                 <label style="margin-right: 30px;" for="">Khởi chiếu</label>
-                                                                <input style="width: 75%;" type="text">
+                                                                <input style="width: 75%;" type="date">
                                                             </div>
                                                             <div class="ad-phim">
                                                                 <label style="margin-right: 30px;" for="">Thể loại</label>
@@ -111,6 +119,7 @@
                                                                 <label style="margin-right: 30px;" for="">Chi tiết</label>
                                                                 <input style=" width: 75%;     height: 150px" type="text">
                                                             </div>
+                                                        </div>
                                                             
                                                         </div>
                                                         <div class="modal-footer">
@@ -125,13 +134,14 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="row" style="width: 6%;">1</th>
+                            <th scope="row" style="width: 20%"> 
+                                <img style="width: 100%" src="img/trasua.jpg" alt="">
+                            </th>
                             <td style="width: 23%;">
                                 <div>THE DEVIL MADE ME DO IT</div>
                                 <div>THE CONJURING: MA XUI QUỶ KHIẾN</div>
                             </td>
                             <td>Taylor Sheridan</td>
-                            <td>Angelina Jolie, Jon Bernthal, Nicholas Hoult</td>
                             <td>05/11/2021</td>
                             <td>Hành động</td>
                             <td>Angelina Jolie tái xuất với siêu phẩm
@@ -139,135 +149,10 @@
                                 Taylor Sheridan Kẻ Nguyền Ta Chết xoay quanh cuộc truy
                                 sát kinh hoàng giữa băng đảng giết thuê và cậu bé Connor -
                                 nhân chứng cuối cùng của một vụ trọng án.</td>
-                            <td>
-                                <div class="btn-admin"><button type="button" class="btn btn-danger btn-buy"
-                                        style="width:100%; margin-top: 0px" data-toggle="modal" data-target="#myModal">
-                                        Thêm</button>
-
-                                </div>
-                                <div class="btn-admin"><button type="button" class="btn btn-danger btn-buy"
-                                        style="width:100%; margin-top: 5px">Sửa</button></div>
-                                <form action="">
-                                    <div class="modal" id="myModal">
-                                        <div class="modal-dialog">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h4 class="modal-title">Thêm lịch chiếu</h4>
-                                                    <button type="button" class="close"
-                                                        data-dismiss="modal">&times;</button>
-                                                </div>
-
-                                                <div class="modal-body">
-                                                    <h6 class="modal-title">Chọn ngày</h6>
-                                                    <div class="form-group">
-                                                        <input type="date">
-                                                        <span class="span-error" id="birth_error"></span>
-                                                    </div>
-
-                                                    <h6 class="modal-title">Chọn suất chiếu</h6>
-                                                    <div class="admin-suatchieu">
-                                                        <input type="checkbox" class="md-form">
-                                                        <label for="">Giờ</label>
-                                                        <input type="time" id="appt" name="appt" min="08:00" max="23:00"
-                                                            required>
-                                                        <label for="">Số ghế</label>
-                                                        <input type="number" id="appt" name="appt">
-                                                        </input>
-                                                    </div>
-                                                    <div class="admin-suatchieu">
-                                                        <input type="checkbox" class="md-form">
-                                                        <label for="">Giờ</label>
-                                                        <input type="time" id="appt" name="appt" min="08:00" max="23:00"
-                                                            required>
-                                                        <label for="">Số ghế</label>
-                                                        <input type="number" id="appt" name="appt">
-                                                        </input>
-                                                    </div>
-                                                    <div class="admin-suatchieu">
-                                                        <input type="checkbox" class="md-form">
-                                                        <label for="">Giờ</label>
-                                                        <input type="time" id="appt" name="appt" min="08:00" max="23:00"
-                                                            required>
-                                                        <label for="">Số ghế</label>
-                                                        <input type="number" id="appt" name="appt">
-                                                        </input>
-                                                    </div>
-                                                    <div class="admin-suatchieu">
-                                                        <input type="checkbox" class="md-form">
-                                                        <label for="">Giờ</label>
-                                                        <input type="time" id="appt" name="appt" min="08:00" max="23:00"
-                                                            required>
-                                                        <label for="">Số ghế</label>
-                                                        <input type="number" id="appt" name="appt">
-                                                        </input>
-                                                    </div>
-                                                    <div class="admin-suatchieu">
-                                                        <input type="checkbox" class="md-form">
-                                                        <label for="">Giờ</label>
-                                                        <input type="time" id="appt" name="appt" min="08:00" max="23:00"
-                                                            required>
-                                                        <label for="">Số ghế</label>
-                                                        <input type="number" id="appt" name="appt">
-                                                        </input>
-                                                    </div>
-                                                    <div class="admin-suatchieu">
-                                                        <input type="checkbox" class="md-form">
-                                                        <label for="">Giờ</label>
-                                                        <input type="time" id="appt" name="appt" min="08:00" max="23:00"
-                                                            required>
-                                                        <label for="">Số ghế</label>
-                                                        <input type="number" id="appt" name="appt">
-                                                        </input>
-                                                    </div>
-                                                    <div class="admin-suatchieu">
-                                                        <input type="checkbox" class="md-form">
-                                                        <label for="">Giờ</label>
-                                                        <input type="time" id="appt" name="appt" min="08:00" max="23:00"
-                                                            required>
-                                                        <label for="">Số ghế</label>
-                                                        <input type="number" id="appt" name="appt">
-                                                        </input>
-                                                    </div>
-
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-danger">Thêm</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Lịch chiếu</th>
-                            <td>11/11/2021</td>
-                            <td colspan="6"><input type="radio" class="btn-check" name="options-outlined"
-                                    id="1-outlined" autocomplete="off">
-                                <label class="btn btn-primary  btn-seat1" for="1-outlined">07:30 AM</label>
-                                <input type="radio" class="btn-check" name="options-outlined" id="1-outlined"
-                                    autocomplete="off">
-                                <label class="btn btn-primary  btn-seat1" for="1-outlined">07:30 AM</label>
-                                <input type="radio" class="btn-check" name="options-outlined" id="1-outlined"
-                                    autocomplete="off">
-                                <label class="btn btn-primary  btn-seat1" for="1-outlined">07:30 AM</label>
-                            </td>
-
-                        </tr>
-                        <tr>
-                            <th scope="row"></th>
-                            <td>11/11/2021</td>
-                            <td colspan="6"><input type="radio" class="btn-check" name="options-outlined"
-                                    id="1-outlined" autocomplete="off">
-                                <label class="btn btn-primary  btn-seat1" for="1-outlined">07:30 AM</label>
-                                <input type="radio" class="btn-check" name="options-outlined" id="1-outlined"
-                                    autocomplete="off">
-                                <label class="btn btn-primary  btn-seat1" for="1-outlined">07:30 AM</label>
-                                <input type="radio" class="btn-check" name="options-outlined" id="1-outlined"
-                                    autocomplete="off">
-                                <label class="btn btn-primary  btn-seat1" for="1-outlined">07:30 AM</label>
-                            </td>
-                        </tr>
+                                <td><button type="button"
+                                    class="btn-close btn-xoa"
+                                    aria-label="Close" style="margin-top: 30px;"></button></td>
+                            
                     </tbody>
                 </table>
             </form>
@@ -278,5 +163,37 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script>
+    $('a.confirmDeletion').on('click', function () {
+        if (!confirm('Confirm Deletion ? '))
+            return false;
+    })
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $(".imgEditPreview").attr('src', e.target.result);
+                $(".imgAddPreview").attr('src', e.target.result);
+                
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+
+
+    $(".imgChangeAdd").change(function () {
+        readURL(this);
+    })
+
+    $(".imgChangeEdit").change(function () {
+        readURL(this);
+    })
+
+
+
+
+</script>
 
 </html>
