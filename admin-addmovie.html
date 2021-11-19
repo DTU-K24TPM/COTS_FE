@@ -69,6 +69,7 @@
                             <th scope="col"></th>
                             <th scope="col">Tên phim</th>
                             <th scope="col">Đạo diễn</th>
+                            <th scope="col">Diễn viên</th>
                             <th scope="col">Khởi chiếu</th>
                             <th scope="col">Thể loại</th>
                             <th scope="col">Chi tiết</th>
@@ -108,6 +109,10 @@
                                                                 <input style=" width: 75%;" type="text">
                                                             </div>
                                                             <div class="ad-phim">
+                                                                <label style="margin-right: 30px;" for="">Diễn viên</label>
+                                                                <input style=" width: 75%;" type="text">
+                                                            </div>
+                                                            <div class="ad-phim">
                                                                 <label style="margin-right: 30px;" for="">Khởi chiếu</label>
                                                                 <input style="width: 75%;" type="date">
                                                             </div>
@@ -137,11 +142,12 @@
                             <th scope="row" style="width: 20%"> 
                                 <img style="width: 100%" src="img/trasua.jpg" alt="">
                             </th>
-                            <td style="width: 23%;">
+                            <td style="width: 20%;">
                                 <div>THE DEVIL MADE ME DO IT</div>
                                 <div>THE CONJURING: MA XUI QUỶ KHIẾN</div>
                             </td>
                             <td>Taylor Sheridan</td>
+                            <td>Taylor Sheridan, Angelina Jolie</td>
                             <td>05/11/2021</td>
                             <td>Hành động</td>
                             <td>Angelina Jolie tái xuất với siêu phẩm
@@ -149,10 +155,69 @@
                                 Taylor Sheridan Kẻ Nguyền Ta Chết xoay quanh cuộc truy
                                 sát kinh hoàng giữa băng đảng giết thuê và cậu bé Connor -
                                 nhân chứng cuối cùng của một vụ trọng án.</td>
-                                <td><button type="button"
+                                <td>
+                                    <div class="ad-btn">
+                                    <button type="button"
                                     class="btn-close btn-xoa"
-                                    aria-label="Close" style="margin-top: 30px;"></button></td>
-                            
+                                    aria-label="Close" style="margin-top: 30px;"></button>
+                                    <button type="button" class="btn btn-danger btn-buy" data-toggle="modal" data-target=".bd-example-modal-lg1" 
+                                    style="width:100%; margin-top: 20px">Sửa</button></div></td>
+                                    <form action="">
+                                        <div class="modal fade bd-example-modal-lg1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg">
+                                              <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h4 class="modal-title">Sửa phim</h4>
+                                                        <button type="button" class="close"
+                                                            data-dismiss="modal">&times;</button>
+                                                    </div>
+    
+                                                    <div class="modal-body-plus">
+                                                        <div class="modal-left">
+                                                            <div class="col-5 img-add">
+                                                                <img id="img-edit-item" class="imgAddPreview"
+                                                                    src="img/trasua.jpg" style="width: 100%;">
+                                                                <input type="file" class="form-control imgChangeAdd" name="image"
+                                                                    id="img1" accept="image/png, image/jpeg, image/jpg"
+                                                                    style="display: none;">
+                                                                <label class="btn-addimg" id="btn-edit-img-item" for="img1">Chọn ảnh</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-right">
+                                                        <div class="ad-phim">
+                                                            <label style="margin-right: 30px;" for="">Tên phim</label>
+                                                            <input style="width: 75%;" type="text">
+                                                        </div>
+                                                        <div class="ad-phim">
+                                                            <label style="margin-right: 30px;" for="">Đạo diễn</label>
+                                                            <input style=" width: 75%;" type="text">
+                                                        </div>
+                                                        <div class="ad-phim">
+                                                            <label style="margin-right: 30px;" for="">Diễn viên</label>
+                                                            <input style=" width: 75%;" type="text">
+                                                        </div>
+                                                        <div class="ad-phim">
+                                                            <label style="margin-right: 30px;" for="">Khởi chiếu</label>
+                                                            <input style="width: 75%;" type="date">
+                                                        </div>
+                                                        <div class="ad-phim">
+                                                            <label style="margin-right: 30px;" for="">Thể loại</label>
+                                                            <input style=" width: 75%;" type="text">
+                                                        </div>
+                                                        <div class="ad-phim">
+                                                            <label style="margin-right: 30px;" for="">Chi tiết</label>
+                                                            <input style=" width: 75%;     height: 150px" type="text">
+                                                        </div>
+                                                    </div>
+                                                        
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-danger">Thêm</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
                     </tbody>
                 </table>
             </form>
