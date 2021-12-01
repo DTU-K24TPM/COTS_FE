@@ -585,12 +585,7 @@ input[type="checkbox"][id^="cb"] {
 .modal-left{
   flex: 1;
 }
-.modal-body-plus{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-top: 20px;
-}
+
 .modal-right{
   width: 100%;
   max-width: 500px;
@@ -744,5 +739,11 @@ input[type="checkbox"][id^="cb"] {
   border: none;
   background: none;
 }
-
- 
+.modal-body-plus{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 20px;
+  overflow-y: auto;
+  max-height: calc(100vh - 260px);
+}
