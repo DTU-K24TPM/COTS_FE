@@ -798,3 +798,6 @@ input[type="checkbox"][id^="cb"] {
 .ten-theloai-skc:hover{
   color: #333 !important;
 }
+.form-check{
+  padding-left: 2rem !important;
+}
