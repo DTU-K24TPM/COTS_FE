@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav1">
+            <div class="collapse navbar-collapse navnav" id="Mainnav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link " href="dangky.html">Đăng ký</a>
+                    </li>
+                    <div class="nav-cach"></div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Đăng nhập</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- menu -->
+    <div class="wrapper-index">
+        <div class="menu-index" id="menu">
+            <ul class="menu-ul">
+                <li>
+                    <a href="index.html"><img class="img-logo" src="img/MEGAS (2).png" /></a>
+                </li>
+                <div class="dropdown">
+                    <li class="li1"><a class="menu-a" href="index.html">PHIM</a>
+                        <div class="noidung_dropdown">
+                            <a href="#">Tất cả</a>
+                            <a href="#">Phim sắp chiếu</a>
+                            <a href="#">Phim đang chiếu</a>
+                        </div>
+                    </li>
+                </div>
+                <div class="dropdown">
+                    <li><a class="menu-a" href="index.html">THỂ LOẠI</a>
+                        <div class="noidung_dropdown">
+                            <a href="#">Kinh dị</a>
+                            <a href="#">Tình cảm</a>
+                            <a href="#">Hành động</a>
+                            <a href="#">Hài hước</a>
+                            <a href="#">Hoạt hình</a>
+                            <a href="#">Lịch sử</a>
+                        </div>
+                    </li>
+                </div>
+                <li><a class="menu-a" href="menu.html">MUA VÉ</a></li>
+                <li><a class="menu-a" href="giohang.html">SỰ KIỆN</a></li>
+                <li><a class="menu-a" href="giohang.html">HỖ TRỢ</a></li>
+            </ul>
+        </div>
+
+
+        <!-- list action bên trái, đưa ra 1 cái ejs để link vào hiển thị nội dung -->
+        <div class="account">
+            <div class="menu">
+                <img src="./img/icons8-facebook-60.png" width="60px" height="80px" alt="">
+                <a href="#" class="myaccount">Tài khoản của tôi</a>
+                <a href="#" class="myaccount">Thay đổi thông tin</a>
+
+                <a href="#" class="myaccount">Đơn mua</a>
+                <a href="#" class="myaccount">Thông báo</a>
+            </div>
+
+
+            <!-- đơn mua -->
+            <div class="details">
+                <div class="main1">
+                    <h3>Đơn mua</h3>
+                    <p>Theo dõi lịch sử đặt vé của bạn dễ dàng</p>
+                </div>
+                <div class="main2">
+                    <ul class="nav nav-tabs menu-status " style="justify-content: space-between;">
+                        <li class="stt-list nav-item" style="    width: 100%; flex: 1;     text-align: center;">
+                            <a class="nav-link link1 active" href="#change1" data-bs-toggle="tab"
+                                data-bs-target="#change1" role="tab" aria-controls="status" aria-selected="true">Đã
+                                đặt</a>
+                        </li>
+                        <li class="stt-list nav-item" style="    width: 100%; flex: 1;     text-align: center;">
+                            <a class="nav-link link1" href="#change2" data-bs-toggle="tab" data-bs-target="#change2"
+                                role="tab" aria-controls="status" aria-selected="true">Đã sử dụng</a>
+
+                        </li>
+                        <li class="stt-list nav-item" style="    width: 100%; flex: 1;     text-align: center;">
+                            <a class="nav-link link1" href="#change3" data-bs-toggle="tab" data-bs-target="#change3"
+                                role="tab" aria-controls="status" aria-selected="true">Đã hủy</a>
+
+                        </li>
+                    </ul>
+
+                    <div class="tab-content">
+
+                        <!-- đơn đã đặt -->
+
+                        <div class="tab-pane active infor-change" id="change1" role="tabpanel">
+                            <form action="">
+                                <div class="infor-frame">
+                                    <div class="donmua-each">
+                                        <div class="donmua-up">
+                                            <div class="img-each">
+                                                <img style="width:100%" src="img/trasua.jpg" alt="">
+                                            </div>
+                                            <div class="infor-main">
+                                                <div class="infor-each">
+                                                    <div style="width: 70px;">Tên phim: </div>
+                                                    <div class="infor-sub">
+                                                        <div>THE CONJURING: THE DEVIL MADE ME DO IT </div>
+                                                        <div>THE CONJURING: MA XUI QUỶ KHIẾN</div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="infor-each">
+                                                    <div style="width: 70px;">Thời gian: </div>
+                                                    <div class="infor-sub">
+                                                        <div>15/12/2021 15:25 PM</div>
+                                                    </div>
+                                                </div>
+                                                <div class="infor-each">
+                                                    <div style="width: 70px;">Số ghế: </div>
+                                                    <div class="infor-sub">
+                                                        <div>G6, G7</div>
+                                                    </div>
+                                                </div>
+                                                <div class="infor-each">
+                                                    <div style="width: 70px;">Rạp: </div>
+                                                    <div class="infor-sub">
+                                                        <div>CINEMA 1</div>
+                                                    </div>
+                                                </div>
+                                                <div class="infor-each">
+                                                    <div style="width: 70px;">COMBO: </div>
+                                                    <div class="infor-sub">
+                                                        <div>Combo SINGLE x1, Khoai tây lắc phô mai x1</div>
+                                                    </div>
+                                                </div>
+                                                <div class="infor-each">
+                                                    <div style="width: 70px; font-size: 20px;font-weight: 700;">TỔNG:
+                                                    </div>
+                                                    <div style="margin-left: 20px; font-size: 20px; font-weight: 700;">
+                                                        <div>175000 VND</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="donmua-down">
+                                            <div class="button-each">
+                                                <button type="button" class="btn btn-infor" id="myBtn" style=" padding: 5px;
+                                                width: 100px;margin-right: 10px;">Sử dụng</button>
+                                                <button type="button" class="btn btn-infor" id="huybtn" style=" padding: 5px;
+                                                width: 100px;">Hủy</button>
+
+                                                <!-- modal mã qr cho button sử dụng -->
+
+                                                <div id="myModal" class="modal" style="margin-top: -50px">
+                                                    <div class="modal-content" style="width: 60%; font-size: 16px;">
+
+                                                        <form action="">
+                                                            <div class="modal-body" style="color: #333;">
+
+                                                                <div class="ad-phim">
+                                                                    <h3 style="margin-top: 20px; font-size: 40px;
+                                                                        font-weight: 700;">Mã vé đặt hàng
+                                                                </div>
+                                                                <div class="ad-phim"
+                                                                    style="display: block; text-align: left;">
+                                                                    <div style="width:100% ;     padding: 0 100px 0px 200px"
+                                                                        id="qrcode"></div>
+
+                                                                    <div
+                                                                        style="font-size: 16px; font-style: italic; margin-top: 20px;">
+                                                                        *Vui lòng đưa mã QR cho nhân
+                                                                        viên
+                                                                        khi bạn đến xem phim</div>
+                                                                    <div style="font-size: 16px; font-style: italic; ">
+                                                                        *Mã QR chỉ có giá trị sử dụng 30 phút trước
+                                                                        giờ chiếu
+                                                                        phim</div>
+
+                                                                </div>
+
+
+                                                            </div>
+
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="suaclose"
+                                                                    data-dismiss="modal"
+                                                                    style=" color: #333;
+                                                                background: rgb(254 199 88); padding: 5px 10px; border: 1px; border-radius: 5px;">Đóng</button>
+                                                            </div>
+                                                        </form>
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
+                        <!-- đơn đã sử dụng -->
+                        <div class="tab-pane" id="change2" role="tabpanel">
+                            <form action="">
+                                <div class="infor-frame">
+                                    <div class="donmua-each">
+                                        <div class="donmua-up">
+                                            <div class="img-each">
+                                                <img style="width:100%" src="img/trasua.jpg" alt="">
+                                            </div>
+                                            <div class="infor-main">
+                                                <div class="infor-each">
+                                                    <div style="width: 70px;">Tên phim: </div>
+                                                    <div class="infor-sub">
+                                                        <div>THE CONJURING: THE DEVIL MADE ME DO IT </div>
+                                                        <div>THE CONJURING: MA XUI QUỶ KHIẾN</div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="infor-each">
+                                                    <div style="width: 70px;">Thời gian: </div>
+                                                    <div class="infor-sub">
+                                                        <div>15/12/2021 15:25 PM</div>
+                                                    </div>
+                                                </div>
+                                                <div class="infor-each">
+                                                    <div style="width: 70px;">Số ghế: </div>
+                                                    <div class="infor-sub">
+                                                        <div>G6, G7</div>
+                                                    </div>
+                                                </div>
+                                                <div class="infor-each">
+                                                    <div style="width: 70px;">Rạp: </div>
+                                                    <div class="infor-sub">
+                                                        <div>CINEMA 1</div>
+                                                    </div>
+                                                </div>
+                                                <div class="infor-each">
+                                                    <div style="width: 70px;">COMBO: </div>
+                                                    <div class="infor-sub">
+                                                        <div>Combo SINGLE x1, Khoai tây lắc phô mai x1</div>
+                                                    </div>
+                                                </div>
+                                                <div class="infor-each">
+                                                    <div style="width: 70px; font-size: 20px;font-weight: 700;">TỔNG:
+                                                    </div>
+                                                    <div style="margin-left: 20px; font-size: 20px; font-weight: 700;">
+                                                        <div>175000 VND</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="donmua-down">
+                                            <div class="button-each">
+                                                <button type="button" class="btn btn-infor" id="myBtn" style=" padding: 5px;
+                                                width: 120px;margin-right: 10px;" disabled>Đã sử dụng</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
+                        <!-- đơn hủy -->
+                        <div class="tab-pane" id="change3" role="tabpanel">
+                            <form action="">
+                                <div class="infor-frame">
+                                    <div class="donmua-each">
+                                        <div class="donmua-up">
+                                            <div class="img-each">
+                                                <img style="width:100%" src="img/trasua.jpg" alt="">
+                                            </div>
+                                            <div class="infor-main">
+                                                <div class="infor-each">
+                                                    <div style="width: 70px;">Tên phim: </div>
+                                                    <div class="infor-sub">
+                                                        <div>THE CONJURING: THE DEVIL MADE ME DO IT </div>
+                                                        <div>THE CONJURING: MA XUI QUỶ KHIẾN</div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="infor-each">
+                                                    <div style="width: 70px;">Thời gian: </div>
+                                                    <div class="infor-sub">
+                                                        <div>15/12/2021 15:25 PM</div>
+                                                    </div>
+                                                </div>
+                                                <div class="infor-each">
+                                                    <div style="width: 70px;">Số ghế: </div>
+                                                    <div class="infor-sub">
+                                                        <div>G6, G7</div>
+                                                    </div>
+                                                </div>
+                                                <div class="infor-each">
+                                                    <div style="width: 70px;">Rạp: </div>
+                                                    <div class="infor-sub">
+                                                        <div>CINEMA 1</div>
+                                                    </div>
+                                                </div>
+                                                <div class="infor-each">
+                                                    <div style="width: 70px;">COMBO: </div>
+                                                    <div class="infor-sub">
+                                                        <div>Combo SINGLE x1, Khoai tây lắc phô mai x1</div>
+                                                    </div>
+                                                </div>
+                                                <div class="infor-each">
+                                                    <div style="width: 70px; font-size: 20px;font-weight: 700;">TỔNG:
+                                                    </div>
+                                                    <div style="margin-left: 20px; font-size: 20px; font-weight: 700;">
+                                                        <div>175000 VND</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="donmua-down">
+                                            <div class="button-each">
+                                                <button type="button" class="btn btn-infor" id="myBtn" style=" padding: 5px;
+                                                width: 120px;margin-right: 10px;" disabled>Đã hủy</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $(".imgEditPreview").attr('src', e.target.result);
+                $(".imgAddPreview").attr('src', e.target.result);
+
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+
+
+    $(".imgChangeAdd").change(function () {
+        readURL(this);
+    })
+
+    $(".imgChangeEdit").change(function () {
+        readURL(this);
+    })
+
+
+
+
+</script>
+<script>
+    var modal = document.getElementById('myModal');
+    var btn = document.getElementById("myBtn");
+    var span = document.getElementsByClassName("suaclose")[0];
+    btn.onclick = function () {
+        modal.style.display = "block";
+    }
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+</script>
+<link rel="stylesheet" href="css/changeinfor.css" />
+<script src="js/bootstrap.js"></script>
+<script src="js/qrcode.min.js"></script>
+<script>
+    var qrcode = new QRCode(document.getElementById('qrcode'), {
+        text: 'Welcome to Gextend',
+        width: 300,
+        height: 300,
+        colorDark: '#000000',
+        colorLight: '#ffffff',
+        correctLevel: QRCode.CorrectLevel.H
+    });
+</script>
+
+</html>
