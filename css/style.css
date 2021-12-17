@@ -859,3 +859,45 @@ input[type="checkbox"][id^="cb"] {
   color: #f93838;
   font-style: italic;
 }
+.img-oke{
+  width: 15%;
+  margin-bottom: 10px;
+}
+.ipgetmonth{
+  padding: 5px;
+    margin: 10px 10px 20px;
+    border: 1px solid #00000057;
+    border-radius: 5px;
+}
+.ipgetyear{
+  padding: 5px;
+    margin: 10px 10px 20px;
+    border: 1px solid #00000057;
+    border-radius: 5px;
+}
+.xemngay{
+  padding: 5px;
+  width: 70px;
+  border: 1px solid rgb(254 199 88);
+  border-radius: 5px;
+  background: rgb(254 199 88);
+  color: #333;
+}
+.xemthang{
+  padding: 5px;
+  width: 70px;
+  border: 1px solid rgb(254 199 88);
+  background: rgb(254 199 88);
+  color: #333;
+  border-radius: 5px;
+}
+.xemngay:hover{
+  background: #333;
+  color: #eee;
+  border: 1px solid #333;
+}
+.xemthang:hover{
+  background: #333;
+  color: #eee;
+  border: 1px solid #333;
+}
