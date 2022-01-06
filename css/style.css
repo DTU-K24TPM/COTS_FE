@@ -901,3 +901,6 @@ input[type="checkbox"][id^="cb"] {
   color: #eee;
   border: 1px solid #333;
 }
+.gia-price{
+  padding: 50px 100px;
+}
